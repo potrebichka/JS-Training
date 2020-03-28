@@ -7,7 +7,10 @@ var Question = function(question, answers, correctAnswer) {
 }
 
 Question.prototype.displayQuestion() = function() {
-
+    console.log(this.question);
+    for (let i = 0; i < this.answers.length; i++) {
+        console.log(i + '. ' + this.answers[i]);
+    }
 }
 
 var questions = [];
